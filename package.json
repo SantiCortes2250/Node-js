@@ -1,0 +1,28 @@
+{
+  "name": "tasksserver",
+  "version": "1.0.0",
+  "description": "MERN API for MERN TASKS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiCortes2250/Node-js.git"
+  },
+  "author": "Santiago Rincon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantiCortes2250/Node-js/issues"
+  },
+  "homepage": "https://github.com/SantiCortes2250/Node-js#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  }
+}
