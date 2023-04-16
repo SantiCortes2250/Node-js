@@ -10,8 +10,21 @@ const app = express()
 
 conectDB()
 
+//HABILITE express.json
+
+app.use(express.json({ extended: true }));
+
 //PORT OF APP
 const PORT = process.env.PORT || 4000;
+
+
+//IMPORT ROUTES
+
+app.use('/api/users', require('./routes/users'))
+app.use('/api/auth', require('./routes/auth'))
+app.use('/api/projects', require('./routes/projects'))
+app.use('/api/tasks', require('./routes/tasks'))
+
 
 
 
