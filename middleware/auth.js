@@ -4,7 +4,7 @@ module.exports = function(req, res, next){
     //read token of header
     const token = req.header('x-auth-token');
 
-    console.log(token)
+
 
 
     //validate if token dont exist
