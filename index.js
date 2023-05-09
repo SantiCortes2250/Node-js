@@ -36,10 +36,10 @@ app.use('/api/tasks', require('./routes/tasks'))
 // Define principal page
 
 app.get('/', (req, res) =>{
-    res.send('Hola mundo')
+    res.send('servidor funcionando')
 })
 //GO APP
 
 app.listen(port, '0.0.0.0', () =>{
-    console.log(`El servidor esta funcionando en el puerto ${PORT}`)
+    console.log(`El servidor esta funcionando en el puerto ${port}`)
 })
