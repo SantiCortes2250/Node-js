@@ -14,6 +14,8 @@ exports.createTask = async (req, res) => {
   //Extract Project and check if exist
 
   const { project } = req.body;
+
+
   try {
     const projectExist = await Projects.findById(project);
     if (!projectExist) {
@@ -41,7 +43,7 @@ exports.createTask = async (req, res) => {
 exports.getTask = async (req, res) => {
   //Extract Project and check if exist
 
-  const { project } = req.body;
+  const { project } = req.query;
   try {
     const projectExist = await Projects.findById(project);
     if (!projectExist) {
@@ -116,7 +118,7 @@ exports.updateTask = async (req, res) => {
 exports.deleteTask = async (req, res) =>{
 
 //Extract project
-  const { project} = req.body;
+  const { project } = req.query;
 
   try {
 
